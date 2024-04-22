@@ -1,0 +1,147 @@
+﻿ToDo's:
+=======
+Signature-Pad implementieren:  https://github.com/szimek/signature_pad 
+
+Changelog alaf 1.x
+==================
+29.08.2019 - System     : af_form_bt - textarea um input-group erweitert.
+11.06.2019 - System  : af_session - af_sys_session_read auf pp7.x angepasst.          
+06.06.2019 - System  : af_selvariant - Klasse in das Framework eingebettet          
+06.06.2019 - System  : af_form_bt - html-attribut "id" sollte kein "[]" enthalten, da jQuery damit Probleme hat!
+31.05.2019 - System  : af_form_bt - "button" kann nun mehrere Icons nebeneinander enthalten.
+31.05.2019 - System  : af_form_bt - "signpad", "checkbox" Fehlerbehebung.
+29.05.2019 - System  : af_form_bt - staticFields um die option "asIMG" zur Anzeige von Grafiken erweitert.
+29.05.2019 - Search  : Erweiterung um die information 'status_label'.
+02.05.2019 - System  : af_form_bt - "checkbox" als bootstrap-toggle implementiert.
+10.04.2019 - System  : editor: Rechtschreibprüfung über das Backend konfigurierbar.
+10.04.2019 - System  : php7-ready: Austausch Mail-Klasse: PHPMailer zu PHPMailer_v6
+10.04.2019 - System  : setup - Anpassung um CleanUp-Funktionen auszuführen! 
+                               Beispiel: admin/modules/mail/core/cleanup.files.php                      
+09.04.2019 - System  : php7-ready: Prüfung list()-Calls.
+09.04.2019 - System  : mainfile - $scriptpath erneuert, da substr unter php7 anders arbeitet.
+09.04.2019 - System  : af_session - session_module_name für php7.x angepasst.
+19.03.2019 - System  : af_form_bt - Neues Formularelement "alaf_currency" zur Behandlung von Währungseingaben.
+08.03.2019 - System  : af_form_bt - Neues Formularelement "signpad" (Signature Pad) zur Eingabe von Unterschriften.
+01.02.2019 - System  : af_menu - Seitenlängeneinstellung über Session-Variable erhalten. 
+29.01.2019 - System  : af_module - Seitenlängeneinstellung über Session-Variable erhalten. 
+31.12.2018 - System  : af_user - Changelog eingefuegt. 
+30.12.2018 - System  : af_changelog - Neue Klasse für das Protokollieren von 
+                                      Datensatzänderungen erstellt (Tabellen, Admin-Bereich, ModWizz)
+21.11.2018 - admin   : admin_menu - Sortierung der Sektionen mit den Übersetzungen.
+18.11.2018 - admin   : user - Benutzerstatistiken nach Jahr|Monat|Tag.
+17.10.2018 - System  : af_engine - style_code eingebunden.
+08.08.2018 - System  : af_form_bt - Neues Formularelement "duration".
+                                    js/plugins/bootstrap-duration-picker/bootstrap-duration-picker.js 
+01.08.2018 - DecisionTree : Neues "optionales" Modul DecisionTree zur Abbildung von Entscheidungsbäumen.
+23.07.2018 - System  : admin_functions - System-Sidemenü wird nun auch über hook ermittelt!
+16.07.2018 - Webmail : Neues "optionales" Modul WebMail mit Zugriff auf Webmail-Konten.
+26.06.2018 - System  : af_user - Neue Funktion af_user::BuildSalutation()
+                                 Ermittlung der Brief/eMail - Anrede aus Geschlecht, Vor- und Nachname
+08.06.2018 - System  : af_db - Neue Version von medoo (1.5.6) implementiert.
+17.05.2018 - System  : af_themes - _construct um Parameter der Theme-Abhängigen Default-Settings
+                                   erweitert.
+11.05.2018 - System  : Benchmark-Funktion implementiert. Beispiel in den Standard-Themes!
+11.05.2018 - System  : Optimierung ReDirect-Screen: responsive-Button
+30.04.2018 - System  : call_module_class_function - Neue Funktion!
+29.04.2018 - Workflow: Modul um die Pflege von Freigabebereichen und Freigabe-Ranges erweitert.
+02.04.2018 - System  : Fehlerbehebungen u.a. in der Suche!
+29.03.2018 - System  : af_form_bt - checkboxes-Einträge können nun optionen über "value_options" erhalten.
+25.03.2018 - Impressum: Umzug in Module (vorher Kombination aus System, Admin und Modules)
+16.03.2018 - System  : af_form_bt - Umstellung zur Abbildung mehrerer Spalten in einer Formularzeile.
+                                    FormRowOpen(col-class), FormRowNewColumn(col-class) und FormRowClose ()
+                                    Löschen von "no-form-group" - Quelltext.
+12.03.2018 - Language: Neue Sprache "ru" hinzugefügt.
+12.03.2018 - System  : af_engine - locale in sprachenabhängige Include-Ersetzung hinzugefügt.          
+08.03.2018 - System  : af_form_bt - FieldErrors zur optischen Darstellung von Eingabefehlern
+                                    implementiert.
+08.03.2018 - System  : af_form_bt - 'confirm' - Option zur Bestätigung von Buttons implementiert.
+05.03.2018 - admin   : menu - Drag und Drop Funktionen im Menüeditor eingebaut!
+________________________________________________________________________________________
+18.02.2018 - / 1.1 freigegeben!
+________________________________________________________________________________________
+18.02.2018 - Content : Alle Content-Module (Blog, Carousell, Content, SpecialFields)
+                       auf Mehrsprachigkeit umgestellt. Dazu wurden die Textfelder in eine
+                       eigene Tabelle ausgegliedert! Siehe folgende Dateien:
+                       - modules/Content/core/tabledef.xml
+                       - modules/Content/core/setup.function.php
+18.02.2018 - System  : setup - Anpassung um SetUp-Funktionen auszuführen! 
+                               Beispiel: modules/Content/core/setup.function.php                      
+13.02.2018 - System  : af_form_bt - bootstrap-datetimepicker als Ersatz zum 
+                                    bisherigen datepicker implementiert.
+03.02.2018 - System  : af_form_bt - input-group-[left/right] können nun mehrfach aufge-
+                                    rufen  werden. Übergabe als Array!
+21.01.2018 - Contact : Mehrsprachigkeit implementiert!
+29.12.2017 - Statistic: Modul erstellt!
+21.12.2017 - Themes  : apple-touch-icon hinzugefügt!
+07.12.2017 - System  : af_module + admin_functions - Eintrag in sys_user_stat-parameter
+                                 auf 200-Zeichen begrenzt!
+06.12.2017 - System  : af_db - Neue Version von medoo (1.5.2) implementiert.
+                       Folgende Anpassungen in den SELECT-Statements sind erf.:
+                         ORDER -> die Sortierreihenfolge muss als Array angegeben
+                                  werden!
+                         JOIN: LANG[=] wird nun durch af_Db::Raw(xxx) ersetzt.
+                                 alt: TABLE .".LANG[=]" => strtoupper ( af_engine::get_lang () )
+                                 neu: TABLE .".LANG" => af_Db::raw("'" .  af_engine::get_lang () . "'")
+                               DESCENDING in Kurzform DESC
+                               ASCENDING in Kurzform ASC
+30.11.2017 - System  : af_engine, admin_functions.php, themes - 
+                         - adminpage.html themespezifisch, falls in themes/xxx/adminpage.html
+                                          vorhanden.
+                       af_menu - ist nun dem Objekt af_engine direkt zugeordnet!
+                                 Somit ist der Zugriff auf die Menüstruktur aus z.B.
+                                 theme.functions.php möglich!
+30.11.2017 - Themes  : admin-alaf-devoops hinzugefügt - Anpassungen siehe oben!
+12.11.2017 - System  : af_form_bt - filemanager - CallBack-Funktion angepasst, sodass nun
+                                    mehrere Filemanager in einem Formular behandelt werden.
+03.11.2017 - System  : user - Kennung IS_DEMOUSER eingefügt, um Profiländerungen aus-
+                              zuschließen.
+18.10.2017 - System  : af_editor - 3 Toolbars eingefügt (reduced, normal, full)
+09.10.2017 - System  : Admin-Modul zur Systemüberwachung implementiert.
+29.09.2017 - System  : Initialisierung für datetimepicker und datepicker als Funktion.
+29.09.2017 - System  : af_form_bt - Funktionen für modal-window hinzugefügt.
+29.09.2017 - Calendar: Modul erstellt.
+13.09.2017 - System  : af_ajax - überflüssige UTF-8-Umwandlung ausgeschlossen. 
+28.08.2017 - Content : DB-Spalte MANDT zur Unterscheidung von Mandanten eingefügt. 
+28.08.2017 - System  : Konfigurationsparameter MANDT in config.php aufgenommen. 
+16.08.2017 - System  : af_engine::getHTML() - Löschen der Leerzeichen auskommentiert, da 
+                                              es Probleme mit highlight.js gibt!
+07.08.2017 - Comment : Modul erstellt.
+01.07.2017 - Blog    : Modul erstellt.
+29.06.2017 - System  : af_system: Funktion afReferer() schreibt jeden Aufruf in das
+                                  Logverzeichnis.
+29.06.2017 - Content : COUNTER für alle Content-Module implementiert.
+23.06.2017 - System  : Funktionen zur Sprachauswahl erstellt und in Templates eingebaut.
+14.06.2017 - System  : af_form_bt - select - Ergänzung um data-chained - optionen
+13.06.2017 - System  : af_form_bt - option 'input-group' button (für Hilfe) hinzugefügt.
+13.05.2017 - System  : af_form_bt - fileinput - als neues Formularobjekt implementiert.
+19.04.2017 - System  : af_form_bt - option 'input-group' für Formularfelder hinzugefügt.
+29.03.2017 - System  : af_debug -  getDebugInfo() um format_db_error () ergänzt.
+29.03.2017 - System  : af_db - letzter DB-Fehler wird gepuffert: fomat_db_error().
+20.03.2017 - System  : af_form_bt - option 'helptext' kann nun ein array mit weiteren
+                                    Attributen sein!
+20.03.2017 - System  : af_form_bt - Korrektur für filemanager modal-ID (ohne [])
+28.02.2017 - System  : af_template - Template-Pfad für includes/classes hinzugefügt
+27.02.2017 - System  : user - Korrrektur beim Speichern des Admin-KZ
+27.02.2017 - System  : Jobs - Korrektur "nur 1x starten"
+24.02.2017 - System  : Session - Einstellungen für Session-Prefix und Session-Lifetime
+22.02.2017 - System  : Funktion afSystemPrintFile hinzugefügt
+05.02.2017 - Search  : Tag-Suche hinzugefügt
+31.01.2017 - System  : af_form_bt - Neues Element ToggleTab  hinzugefügt
+                                    (ToggleTabOpen, ToggleTabPanel und ToggleTabClose
+31.01.2017 - System  : af_form_bt - option 'helptext' für Formularfelder hinzugefügt
+27.01.2017 - System  : db - #-Maskierung von Spalten als Ausnahme in quote-Funktion
+26.01.2017 - admin   : user - Erste Statistik-Funktion als Chart
+26.01.2017 - System  : morris.js als Chart-Engine hinzugefügt
+26.01.2017 - System  : Funktion User-Statistik hinzugefügt
+25.01.2017 - System  : af_form_bt - FieldSetOpen: Option 'panel-context' erweitert
+22.01.2017 - admin   : rbac - Berechtigungen in Gruppen darstellen
+22.01.2017 - admin   : mail - Berechtigungen eingestellt
+20.01.2017 - admin   : development - Berechtigungen eingestellt
+20.01.2017 - admin   : jobs - Berechtigungen eingestellt
+18.01.2017 - System  : Tag-Funktionalität erstellt
+10.01.2017 - System  : Benutzeranmeldung komplett überarbeitet
+07.01.2017 - System  : af_form_bt - Neues Element "linkbutton" hinzugefügt
+________________________________________________________________________________________
+08.07.2015 / 1.0 beta
+- erste Ausgabe
+
